@@ -1,3 +1,4 @@
+/*
 let preguntarAlUser = prompt ("-Vendedor: Qué producto de Yoga desea comprar? -Almohadilla, pelota, colchoneta").toLowerCase()
 
 class Productos { constructor (nombre, precio, stock, precioDos ){
@@ -92,3 +93,38 @@ function operacion (){
 }
 
 operacion()
+
+*/
+let formulario = document.getElementById("formulario");
+let inputProducto = document.getElementById("inputProducto");
+let inputPrecio = document.getElementById("inputPrecio");
+let inputCantidad = document.getElementById("inputCantidad");
+
+let elementos = []
+
+class Productos {
+    constructor (producto, precio, cantidad) {
+    this.producto= producto.toUpperCase();
+    this.precio= precio;
+    this.cantidad= cantidad;
+    
+    }
+}
+
+formulario.onsubmit= (event) => validarFormulario(event);
+
+function validarFormulario (event){
+
+    event.preventDefault()
+
+    let producto= inputProducto.value;
+    let precio= inputPrecio.value;
+    let cantidad= inputCantidad.value;
+
+    let mercaderia= new Productos (producto, precio, cantidad);
+    elementos.push(mercaderia);
+    formulario.reset();
+    console.log(elementos);
+   
+
+}

@@ -15,13 +15,112 @@
 </head>
 <body>
 
-<h1>YogAloha</h1>
-    <script src="index.js"></script>
+
+  <div class="clas">
+  <h2>YogAloha</h2>
+  </div>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="" href="">Nosotros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">Clases</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">News</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">Productos</a>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+</nav>
+<header>
+  <h2 class="text-center">Quiénes somos</h2>
+  <p class="text-center">YogAloha, es un lugar donde trabajamos diariamente con el objetivo de colaborar en la transformación positiva de las personas y de nuestro entorno, a través del Yoga. <br> Ubicado en Pilar, Provincia de Buenos Aires, ofrece un espacio diferente, único y muy especial, donde el practicante encontrará una dinámica totalmente personalizada. <br> Tanto los productos como los servicios que ofrecemos tienen la intención de acercarnos a esa conciencia superior y lograr que vivamos en el presente.</p>
+
+</header>
+
+  <main>
+
+    <section class="sec">
+    <h2>Conoce las distintas clases de Yoga que podes tomar!</h2>
+    <h3>Vinyasa Flow Yoga</h3>
+    <p>Vinyasa Flow es un estilo de yoga dinámico donde se practican las asanas en secuencias fluidas al ritmo de la respiración, con la mente focalizada en puntos claves del cuerpo y la energía. Es una práctica intensa que integra los principios fundamentales de los siguientes tipos de yoga</p>
+    </section>
+
+    <section class="sec">
+    <h3>Yogaterapia</h3>
+    <p>Es un conjunto de técnicas de yoga que se utilizan como medio de sanación teniendo como fin la salud espiritual del individuo, precisamente en el campo que la medicina, la psicológica y fisioterapia, siendo una disciplina complementaria de éstas y nunca alternativa.</p>
+    </section>
+
+    <section class="sec">
+      <h3>Hatha Yoga Dinamico</h3>
+      <p>Orientado hacia aquellos que prefieren clases más tranquilas, pero no por ello menos intensas. Este estilo se basa en la práctica de asanas (posturas de yoga) que aportan a los músculos firmeza y elasticidad, acompañados siempre de la respiración y la concentración que nos lleva a nuestro objetivo de equilibrar cuerpo, mente y alma.</p>
+      </section>
+
+      <section class="sec">
+        <h3> Hatha con elementos</h3>
+        <p>Las clases de Hatha con elementos q apuntan a secuencias simples donde hacemos hincapié en la correcta alineación del cuerpo en cada postura, considerando los fundamentos de la biomecánica. Ayudándonos con elementos adaptamos las posturas a las posibilidades de cada unx para avanzar en la práctica de forma segura. Apta para todos!</p>
+        </section>
+
+    <div class="grid">
+      <div>
+        <img class="imagen" src="images/almohadillarelajante.jpg" alt="almohadillarelajante">
+        <p>Almohadilla relajante $700</p>
+      </div>
+      <div>
+          <img class="imagen" src="images/matcaucho6mm.jpg" alt="matcaucho6mm">
+          <p>Mat caucho 6MM $3000</p>
+        </div>
+        <div>
+          <img class="imagen" src="images/pelotareflex6cm.jpg" alt="pelotareflex6mm">
+          <p>Pelota reflex 6 CM $600</p>
+        </div>
+      </div>
+    
+    <div class="container">
+      <h3>Comienza tu compra!</h3>
+      <form id="formulario">
+      <div  class="mb-4">
+        <label class="form-label">Producto</label>
+        <input type="text" class="form-control" id="inputProducto">
+      </div>
+      <div  class="mb-4">
+        <label class="form-label">Precio</label>
+        <input type="number" class="form-control" id="inputPrecio">
+      </div>
+      <div  class="mb-4">
+        <label class="form-label">Cantidad</label>
+        <input type="number" class="form-control" id="inputCantidad">
+      </div>
+      <div class="mb-4">
+      <button type="submit" class="btn btn-primary">Enter</button>
+      </div>
+      </form>
+
+    </div>
+
+  </main>
 
 
     <!-- link de js en bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
   crossorigin="anonymous"></script>
+
+  <script src="index.js"></script>
 </body>
 </html>
