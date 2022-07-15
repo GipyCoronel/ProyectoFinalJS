@@ -1,18 +1,24 @@
+
+
 body {
-    background-color: azure;
+    background-color: rgb(243, 223, 242);
+    
 
 }
 .clas {
     text-align: center;
 }
-.grid {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    width: 100%;
-    text-align: center;
-    margin-top: 50px;
-    }
+
 
 .sec {
     text-align: center;
-}    
+}  
+
+.pic {
+    width: 200px;
+    padding: 10px; 
+    float: right;
+    margin-bottom: 2rem;
+
+}
+

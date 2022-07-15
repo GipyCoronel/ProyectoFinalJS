@@ -1,130 +1,66 @@
-/*
-let preguntarAlUser = prompt ("-Vendedor: Qué producto de Yoga desea comprar? -Almohadilla, pelota, colchoneta").toLowerCase()
+//  Crear una pagina web de yoga que tenga un ecommerce que venda productos de dicha actividad!
 
-class Productos { constructor (nombre, precio, stock, precioDos ){
+// CLASES-objeto
 
-    this.nombre= nombre;
-    this.precio= precio;
-    this.stock= stock;
-    this.precioDos= precioDos;
-}
-mostrarNombre(){ alert ("Cliente: Deseo comprar un/a " + this.nombre+ " de " + this.precio + " pesos ," + " tiene stock? " + this.stock )}
-mostrarTotal() {alert ("El precio total de los productos es:" + (this.precio + this.precioDos))}
-
-}
-
-let h2=document.createElement("h2")
-h2.textContent="Bienvenido"
-document.body.appendChild(h2)
-
-function operacion (){
-    if (preguntarAlUser==="no"){
-        return alert ("Gracias por su visita")
+class Producto{
+    constructor (id, nombre, precio, imagen, impuesto) {
+    this.id = id;    
+    this.nombre = nombre;
+    this.precio = precio;
+    this.imagen = imagen;
+    this.impuesto = impuesto;
     }
+}
 
-    let arr= ["rojo", "verde", "amarillo"]
+class Carrito {
+    constructor (id, productos) {
+    this.id = id,
+    this.productos = productos;
+    }
+}
 
-    for (let index = 0; index<arr.length; index++){
+// FUNCIONES
 
-        let productoUno
+// Genero mi catalogo de productos
 
-        if (preguntarAlUser==="colchoneta"){
-        if (arr[index]=== "rojo"){
-         
-            productoUno= new Productos("colchoneta", 700, true)
-            productoUno.mostrarNombre()
+let catalogoProductos = [];
 
-            alert ("Tenemos colchoneta color "+ arr[index])
+let productoUno = new Producto (1, "Almohadilla Relajante", 700, "almohadillarelajante.jpg", 0.21);
+let productoDos = new Producto (2, "Mat de Caucho", 2200, "matcaucho6mm.jpg",0.21);
+let productoTres = new Producto (3, "Pelota Reflex", 600, "pelotareflex6cm.jpg", 0.21);
+
+catalogoProductos.push (productoUno);
+catalogoProductos.push (productoDos);
+catalogoProductos.push (productoTres);
+
+// Mostrar productos por DOM
+let cardsDiv = document.querySelector("#cards");
+
+    let tarjeta = ` <div class="container" id="cards">
+                <div class="row">
+                <div class="col mb-3">
+                    <img class="imagen" src="" alt="">
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <button class="btn btn-primary botonDeCompra">Agregar al carrito</button>
+                    </div>
+                    </div>  `
             
-        }
-    }
+  catalogoProductos.forEach(producto => {
+    cardsDiv.innerHTML += tarjetaDos (producto);
+})
 
-    let productoDos 
-
-    if (preguntarAlUser==="pelota") {
-        if (arr[index]==="verde") {
-            productoDos= new Productos ("pelota", 100,true)
-            productoDos.mostrarNombre()
-
-            alert("Tenemos pelota "+ arr[index])
-        }
-    }
-
-    
-}
-
-     let productoTres
-     if (preguntarAlUser==="almohadilla") {
-         
-             productoTres= new Productos ("almohadilla", 300, false)
-             productoTres.mostrarNombre()
-             return alert ("Gracias por su visita")
-         }
-     
-
-     let preguntaDos 
-
-     if (preguntarAlUser=="colchoneta"|| preguntarAlUser=="pelota") {
-         preguntaDos=prompt("Desea comprar otro producto").toLowerCase()
-
-         if(preguntaDos=="pelota"){
-             productoCinco= new Productos ("",100,"",700)
-
-             productoCinco.mostrarTotal()
-         }
-
-         if(preguntaDos=="colchoneta"){
-            productoCinco= new Productos ("",700,"",100)
-
-            productoCinco.mostrarTotal()
-        }
-
-        if(preguntaDos=="almohadilla"){
-            productoTres= new Productos ("almohadilla", 300, false)
-            productoTres.mostrarNombre()
-        }
-     }
-
-     let h3=document.createElement("h3")
-     h2.textContent="Gracias por tu compra"
-     document.body.appendChild(h3)
-     document.body.style.backgroundColor="lightblue"
-
-}
-
-operacion()
-
-*/
-let formulario = document.getElementById("formulario");
-let inputProducto = document.getElementById("inputProducto");
-let inputPrecio = document.getElementById("inputPrecio");
-let inputCantidad = document.getElementById("inputCantidad");
-
-let elementos = []
-
-class Productos {
-    constructor (producto, precio, cantidad) {
-    this.producto= producto.toUpperCase();
-    this.precio= precio;
-    this.cantidad= cantidad;
-    
-    }
-}
-
-formulario.onsubmit= (event) => validarFormulario(event);
-
-function validarFormulario (event){
-
-    event.preventDefault()
-
-    let producto= inputProducto.value;
-    let precio= inputPrecio.value;
-    let cantidad= inputCantidad.value;
-
-    let mercaderia= new Productos (producto, precio, cantidad);
-    elementos.push(mercaderia);
-    formulario.reset();
-    console.log(elementos);
-   
-
+function tarjetaDos (producto) {
+    let tarjeta =
+    ` <div class="container" id="cards">
+                <div class="row">
+                <div class="col mb-3">
+                    <img class="imagen" src="./images/${producto.imagen}" alt="">
+                    <p>${producto.id}.${producto.nombre}</p>
+                    <p>$ ${producto.precio}</p>
+                    <button class="btn btn-primary botonDeCompra">Agregar al carrito</button>
+                    </div>
+                    </div>  `;
+                    return tarjeta;
 }

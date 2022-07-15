@@ -17,10 +17,10 @@
 
 
   <div class="clas">
-  <h2>YogAloha</h2>
+  <h1>YogAloha</h1>
   </div>
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
   <div class="container-fluid">
     <a class="navbar-brand" href="#"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -31,16 +31,16 @@
 
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="" href="">Nosotros</a>
+          <a class="nav-link active" aria-current="" href="#who">Nosotros</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="">Clases</a>
+          <a class="nav-link" href="#cla">Clases</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="">News</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="">Productos</a>
+          <a class="nav-link" href="#boy">Tienda</a>
         </li>
       </ul>
 
@@ -48,71 +48,74 @@
   </div>
 </nav>
 <header>
-  <h2 class="text-center">Quiénes somos</h2>
-  <p class="text-center">YogAloha, es un lugar donde trabajamos diariamente con el objetivo de colaborar en la transformación positiva de las personas y de nuestro entorno, a través del Yoga. <br> Ubicado en Pilar, Provincia de Buenos Aires, ofrece un espacio diferente, único y muy especial, donde el practicante encontrará una dinámica totalmente personalizada. <br> Tanto los productos como los servicios que ofrecemos tienen la intención de acercarnos a esa conciencia superior y lograr que vivamos en el presente.</p>
-
+  
+  <div class="container mb-4">
+  <div class="row">
+  <div class="col">
+  <h2 class="text-center mb-2" id="who">Quiénes somos</h2>
+  <p>YogAloha, es un lugar donde trabajamos diariamente con el objetivo de colaborar en la transformación positiva de las personas y de nuestro entorno, a través del Yoga. Ubicado en Pilar, Provincia de Buenos Aires, ofrece un espacio diferente, único y muy especial, donde el practicante encontrará una dinámica totalmente personalizada. <br> Tanto los productos como los servicios que ofrecemos tienen la intención de acercarnos a esa conciencia superior y lograr que vivamos en el presente.</p>
+  </div>
+  <div class="col">
+    <img class="pic" src="images/yoga.jpg" alt="yoga">
+  </div>
+  </div>
+  </div>
 </header>
 
   <main>
 
-    <section class="sec">
-    <h2>Conoce las distintas clases de Yoga que podes tomar!</h2>
-    <h3>Vinyasa Flow Yoga</h3>
+    <section class="sec" id="cla">
+    <h3>Conoce las distintas clases de Yoga que podes tomar!</h3>
+    <h4>Vinyasa Flow Yoga</h4>
     <p>Vinyasa Flow es un estilo de yoga dinámico donde se practican las asanas en secuencias fluidas al ritmo de la respiración, con la mente focalizada en puntos claves del cuerpo y la energía. Es una práctica intensa que integra los principios fundamentales de los siguientes tipos de yoga</p>
     </section>
 
     <section class="sec">
-    <h3>Yogaterapia</h3>
+    <h4>Yogaterapia</h4>
     <p>Es un conjunto de técnicas de yoga que se utilizan como medio de sanación teniendo como fin la salud espiritual del individuo, precisamente en el campo que la medicina, la psicológica y fisioterapia, siendo una disciplina complementaria de éstas y nunca alternativa.</p>
     </section>
 
     <section class="sec">
-      <h3>Hatha Yoga Dinamico</h3>
+      <h4>Hatha Yoga Dinamico</h4>
       <p>Orientado hacia aquellos que prefieren clases más tranquilas, pero no por ello menos intensas. Este estilo se basa en la práctica de asanas (posturas de yoga) que aportan a los músculos firmeza y elasticidad, acompañados siempre de la respiración y la concentración que nos lleva a nuestro objetivo de equilibrar cuerpo, mente y alma.</p>
       </section>
 
       <section class="sec">
-        <h3> Hatha con elementos</h3>
+        <h4> Hatha con elementos</h4>
         <p>Las clases de Hatha con elementos q apuntan a secuencias simples donde hacemos hincapié en la correcta alineación del cuerpo en cada postura, considerando los fundamentos de la biomecánica. Ayudándonos con elementos adaptamos las posturas a las posibilidades de cada unx para avanzar en la práctica de forma segura. Apta para todos!</p>
         </section>
 
-    <div class="grid">
-      <div>
-        <img class="imagen" src="images/almohadillarelajante.jpg" alt="almohadillarelajante">
-        <p>Almohadilla relajante $700</p>
-      </div>
-      <div>
-          <img class="imagen" src="images/matcaucho6mm.jpg" alt="matcaucho6mm">
-          <p>Mat caucho 6MM $3000</p>
+       
         </div>
-        <div>
-          <img class="imagen" src="images/pelotareflex6cm.jpg" alt="pelotareflex6mm">
-          <p>Pelota reflex 6 CM $600</p>
+        <h2 id="boy" class="text-center">Elegi tus productos!</h2>
         </div>
-      </div>
+        <div class="container" id="cards">
+          <div class="row">
+            <div class="col align-self-start">
+              <img class="imagen" src="images/almohadillarelajante.jpg" alt="almohadillarelajante">
+              <p>Almohadilla relajante</p>
+              <p>Precio $700</p>
+              <button class="btn btn-primary botonDeCompra">Agregar al carrito</button>
+              </div>
+            <div class="col align-self-center">
+              <img class="imagen" src="images/matcaucho6mm.jpg" alt="matcaucho6mm">
+              <p>Mat caucho 6MM</p>
+              <p>Precio $2200</p>
+              <button class="btn btn-primary botonDeCompra">Agregar al carrito</button>
+            </div>
+            <div class="col align-self-end">
+              <img class="imagen" src="images/pelotareflex6cm.jpg" alt="pelotareflex6mm">
+              <p>Pelota reflex 6 CM</p>
+              <p>Precio $600</p>
+              <button class="btn btn-primary botonDeCompra">Agregar al carrito</button>
+            </div>
+          </div>
+        </div>
+       
+     
+      <div id="cards"></div>
+      <div id="carrito"></div>
     
-    <div class="container">
-      <h3>Comienza tu compra!</h3>
-      <form id="formulario">
-      <div  class="mb-4">
-        <label class="form-label">Producto</label>
-        <input type="text" class="form-control" id="inputProducto">
-      </div>
-      <div  class="mb-4">
-        <label class="form-label">Precio</label>
-        <input type="number" class="form-control" id="inputPrecio">
-      </div>
-      <div  class="mb-4">
-        <label class="form-label">Cantidad</label>
-        <input type="number" class="form-control" id="inputCantidad">
-      </div>
-      <div class="mb-4">
-      <button type="submit" class="btn btn-primary">Enter</button>
-      </div>
-      </form>
-
-    </div>
-
   </main>
 
 
