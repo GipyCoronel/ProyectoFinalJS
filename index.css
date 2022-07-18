@@ -3,7 +3,7 @@
 body {
     background-color: rgb(243, 223, 242);
     
-
+font-family:Georgia, 'Times New Roman', Times, serif;
 }
 .clas {
     text-align: center;
@@ -21,4 +21,14 @@ body {
     margin-bottom: 2rem;
 
 }
+
+#cards {
+    
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+        margin-left: 50px;
+        }
 

@@ -85,36 +85,32 @@
         <p>Las clases de Hatha con elementos q apuntan a secuencias simples donde hacemos hincapié en la correcta alineación del cuerpo en cada postura, considerando los fundamentos de la biomecánica. Ayudándonos con elementos adaptamos las posturas a las posibilidades de cada unx para avanzar en la práctica de forma segura. Apta para todos!</p>
         </section>
 
-       
+     
         </div>
         <h2 id="boy" class="text-center">Elegi tus productos!</h2>
         </div>
-        <div class="container" id="cards">
-          <div class="row">
-            <div class="col align-self-start">
-              <img class="imagen" src="images/almohadillarelajante.jpg" alt="almohadillarelajante">
-              <p>Almohadilla relajante</p>
-              <p>Precio $700</p>
-              <button class="btn btn-primary botonDeCompra">Agregar al carrito</button>
-              </div>
-            <div class="col align-self-center">
-              <img class="imagen" src="images/matcaucho6mm.jpg" alt="matcaucho6mm">
-              <p>Mat caucho 6MM</p>
-              <p>Precio $2200</p>
-              <button class="btn btn-primary botonDeCompra">Agregar al carrito</button>
-            </div>
-            <div class="col align-self-end">
-              <img class="imagen" src="images/pelotareflex6cm.jpg" alt="pelotareflex6mm">
-              <p>Pelota reflex 6 CM</p>
-              <p>Precio $600</p>
-              <button class="btn btn-primary botonDeCompra">Agregar al carrito</button>
-            </div>
-          </div>
-        </div>
-       
-     
+      
+      
       <div id="cards"></div>
-      <div id="carrito"></div>
+      <div><h1>Carrito</h1></div>
+      <div id="carrito">
+      </div>
+      <div class="container">
+        <div class="row">
+            <!-- Elementos generados a partir del JSON -->
+            <main id="items" class="col-sm-8 row"></main>
+            <!-- Carrito -->
+            <aside class="col-sm-4">
+                <h2>Carrito</h2>
+                <!-- Elementos del carrito -->
+                <ul id="carrito" class="list-group"></ul>
+                <hr>
+                <!-- Precio total -->
+                <p class="text-right">Total: <span id="total"></span>$</p>
+                <button id="boton-vaciar" class="btn btn-danger">Vaciar</button>
+            </aside>
+        </div>
+    </div>
     
   </main>
 
