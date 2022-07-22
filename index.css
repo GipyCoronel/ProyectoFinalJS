@@ -1,7 +1,7 @@
 
 
 body {
-    background-color: rgb(243, 223, 242);
+    background-color: white;
     
 font-family:Georgia, 'Times New Roman', Times, serif;
 }
@@ -22,13 +22,16 @@ font-family:Georgia, 'Times New Roman', Times, serif;
 
 }
 
-#cards {
-    
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-        width: 100%;
-        text-align: center;
-        margin-top: 20px;
-        margin-left: 50px;
-        }
+#navbarNav {
+    background-color: rgb(243, 200, 239);
+}
 
+footer {
+    background-color: rgb(221, 172, 216);
+}
+.item-button {
+    background-color: rgb(221, 172, 216);
+}
+.coul {
+    background-color: rgb(221, 172, 216);
+}
