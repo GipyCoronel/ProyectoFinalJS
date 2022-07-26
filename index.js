@@ -100,8 +100,17 @@ function updateShoppingCartTotal (){
     });
     
     shoppingCartTotal.innerHTML = `${total.toFixed(2)}$`;
+
+    localStorage.setItem('.shoppingCartItemsContainer', JSON.stringify(shoppingCartItemsContainer))
     
 }
+
+    document.addEventListener ('DOMContentLoaded', () =>{
+      if (localStorage.getItem('.shoppingCartItemsContainer')){
+        shoppingCartItemsContainer= JSON.parse (localStorage.getItem(shoppingCartItemsContainer))
+         updateShoppingCartTotal();
+      }
+    })
 
     function removeShoppingCartItem(event) {
     const buttonClicked = event.target;

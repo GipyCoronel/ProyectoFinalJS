@@ -25,6 +25,9 @@ font-family:Georgia, 'Times New Roman', Times, serif;
 #navbarNav {
     background-color: rgb(243, 200, 239);
 }
+.le {
+    color:rgb(236, 125, 225);
+}
 
 footer {
     background-color: rgb(221, 172, 216);
@@ -34,4 +37,21 @@ footer {
 }
 .coul {
     background-color: rgb(221, 172, 216);
+    color: white;
+}
+
+
+footer {
+    justify-content: center;
+    text-align: center;
+}
+
+.tam {
+    height: 35px;
+    width: 35px;
+}
+
+.tamm {
+    height: 43px;
+    width: 43px;
 }
