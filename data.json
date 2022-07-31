@@ -1,0 +1,86 @@
+[
+    {
+      
+      "itemPrice": 700,
+      "id": 1,
+      "itemTitle": "Almohadilla Relajante",
+      "itemImage": "./images/almohadillarelajante.jpg"
+    },
+    {
+    
+      "itemPrice": 2200,
+      "id": 2,
+      "itemTitle": "Mat de Caucho",
+      "itemImage": "./images/matcaucho6mm.jpg"
+    },
+    {
+    
+      "itemPrice": 1100,
+      "id": 3,
+      "itemTitle": "Almohadon Cervical",
+      "itemImage": "./images/almohadoncervical.jpg" 
+    },
+    {
+      
+      "itemPrice": 600,
+      "id": 4,
+      "itemTitle": "Pelota Reflex 6cm",
+      "itemImage": "./images/pelotareflex6cm.jpg"
+    },
+    {
+      
+      "itemPrice": 3500,
+      "id": 5,
+      "itemTitle": "Zafu Zen",
+      "itemImage": "./images/zafuzen.jpg"
+    },
+    {
+      
+      "itemPrice": 1500,
+      "id": 6,
+      "itemTitle": "Bolster Yenga Grande",
+      "itemImage": "./images/bolsteriyengargrande"
+    },
+    {
+      
+      "itemPrice": 1200,
+      "id": 7,
+      "itemTitle": "Collar Japa Mala",
+      "itemImage": "./images/japamala.jpg"
+    },
+    {
+      
+      "itemPrice": 900,
+      "id": 8,
+      "itemTitle": "Mantel",
+      "itemImage": "./images/mantel.jpg"
+    },
+    {
+      
+      "itemPrice": 870,
+      "id": 9,
+      "itemTitle": "Porta Mat",
+      "itemImage": "./images/portamat.jpg"
+    },
+    {
+      
+      "itemPrice": 3200,
+      "id": 10,
+      "itemTitle": "Pelota Terapeutica",
+      "itemImage": "./images/pelotaterapeutica.jpg"
+    },
+    {
+      
+      "itemPrice": 3500,
+      "id": 11,
+      "itemTitle": "Manta Polar",
+      "itemImage": "./images/mantapolar.jpg"
+    },
+    {
+      
+      "itemPrice": 2700,
+      "id": 12,
+      "itemTitle": "Yoga Wheel",
+      "itemImage": "./images/yogawheel.jpg"
+    }
+  ]

@@ -128,3 +128,13 @@ function updateShoppingCartTotal (){
     shoppingCartItemsContainer.innerHTML = '';
     updateShoppingCartTotal();
   }
+
+  async function obtenerJson () {
+ 
+      const response = await fetch ("data.json")
+      const data = await response.json ()
+
+      console.log(data);
+  }
+
+  obtenerJson();
