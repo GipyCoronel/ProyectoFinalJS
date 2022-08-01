@@ -101,16 +101,25 @@ function updateShoppingCartTotal (){
     
     shoppingCartTotal.innerHTML = `${total.toFixed(2)}$`;
 
-    localStorage.setItem('.shoppingCartItemsContainer', JSON.stringify(shoppingCartItemsContainer))
+     /*localStorage.setItem('.shoppingCartItemsContainer', JSON.stringify(shoppingCartItemsContainer)) */
     
 }
+   
 
-    document.addEventListener ('DOMContentLoaded', () =>{
-      if (localStorage.getItem('.shoppingCartItemsContainer')){
-        shoppingCartItemsContainer= JSON.parse (localStorage.getItem(shoppingCartItemsContainer))
-         updateShoppingCartTotal();
+    function renovarStorage () {
+      localStorage.removeItem('.shoppingCartItem');
+      localStorage.setItem('.shoppingCartItem',JSON.stringify(shoppingCartItem));
+
+    }
+    
+    window.addEventListener ('DOMContentLoaded', () =>{
+      if (localStorage.getItem('.shoppingCartItem')){
+        shoppingCartItemsContainer= JSON.parse (localStorage.getItem(shoppingCartItem))
+         renovarStorage();
+         
       }
     })
+ 
 
     function removeShoppingCartItem(event) {
     const buttonClicked = event.target;
@@ -137,4 +146,5 @@ function updateShoppingCartTotal (){
       console.log(data);
   }
 
-  obtenerJson();
+  obtenerJson(); 
+
